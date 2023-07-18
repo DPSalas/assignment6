@@ -22,4 +22,4 @@ jobs:
         run: |
           docker build -t my-container .
           docker tag my-container <registry_username>/<image_name>:<tag>
-          docker push DPSalas/Assignment6:<tag>
+          docker push DPSalas/Assignment6:latest
