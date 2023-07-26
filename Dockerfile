@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-RUN dnf -y install vim
+RUN apt-get update && apt-get install -y vim
 COPY Dockerfile.txt /app/
 WORKDIR /app
 CMD ["python", "app.py"]
