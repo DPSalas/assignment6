@@ -21,5 +21,5 @@ jobs:
       - name: Build and push container
         run: |
           docker build -t my-container .
-          docker tag my-container DPSalas/containerfile:latest
-          docker push DPSalas/containerfile:latest
+          docker tag my-container DPSalas/dockerfile:latest
+          docker push DPSalas/dockerfile:latest
