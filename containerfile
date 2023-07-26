@@ -1,11 +1,6 @@
-FROM fedora:latest
 
-RUN dnf -y upgrade
-
-RUN dnf -y install tuxpaint vim httpd
-
+FROM ubuntu:latest
+RUN apt-get update && apt-get install -y package1 package2
+ENV MY_ENV_VAR=value
 COPY ./path/to/your/application /app
-
-EXPOSE 80/tcp
-
-LABEL version=latest
+CMD ["python", "app.py"]
